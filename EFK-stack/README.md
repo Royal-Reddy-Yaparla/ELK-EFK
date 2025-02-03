@@ -1,10 +1,10 @@
-# Elasticsearch: A Comprehensive Guide
+# Elasticsearch
 
 Elasticsearch is a distributed, RESTful search and analytics engine designed for scalability, real-time data indexing, and search capabilities. It is commonly used in log analytics, full-text search, and as part of the **EFK Stack (Elasticsearch, Fluentd, Kibana)** for log monitoring.
 
 ---
 
-## 📌 1️⃣ Cluster Architecture in Elasticsearch
+## 1️⃣ Cluster Architecture in Elasticsearch
 
 ### **Elasticsearch Cluster Nodes**
 An Elasticsearch cluster consists of multiple **nodes**, each serving a specific role:
@@ -27,7 +27,7 @@ GET /_nodes
 
 ---
 
-## 📌 2️⃣ Indexing in Elasticsearch
+## 2️⃣ Indexing in Elasticsearch
 
 ### **What is an Index?**
 An **index** is a logical namespace that groups related documents in Elasticsearch.
@@ -49,7 +49,7 @@ GET /_cat/indices
 
 ---
 
-## 📌 3️⃣ Shards & Replicas
+## 3️⃣ Shards & Replicas
 
 ### **What are Shards?**
 Elasticsearch **splits an index into smaller parts** called **shards** for distributed storage.
@@ -69,7 +69,7 @@ PUT /products
 
 ---
 
-## 📌 4️⃣ Mapping in Elasticsearch
+## 4️⃣ Mapping in Elasticsearch
 
 ### **Types of Mapping**
 - **Dynamic Mapping**: Fields are automatically detected and mapped.
@@ -89,7 +89,7 @@ PUT /products/_mapping
 
 ---
 
-## 📌 5️⃣ CRUD Operations in Elasticsearch
+## 5️⃣ CRUD Operations in Elasticsearch
 
 ### **Create (Index a Document)**
 ```json
@@ -145,7 +145,7 @@ POST /products/_bulk
 
 ---
 
-## 📌 6️⃣ Inverted Index in Elasticsearch
+## 6️⃣ Inverted Index in Elasticsearch
 Elasticsearch uses an **Inverted Index** to optimize full-text searches.
 - Instead of storing documents sequentially, it creates an index of words.
 - Helps in **fast lookups** by mapping words to document locations.
@@ -161,7 +161,7 @@ Example:
 
 ---
 
-## 📌 7️⃣ Difference Between `POST` and `PUT`
+## 7️⃣ Difference Between `POST` and `PUT`
 
 | Feature | `POST` | `PUT` |
 |---------|--------|--------|
