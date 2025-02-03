@@ -1,0 +1,20 @@
+ELK
+-----
+- ElasticSearch -> DB to store log files/Docs
+- LogStash -> 
+- Kibana -> UI for elastic search 
+
+
+usually application logs should be shifted for external system
+-------------
+create an EC2 instance
+- t3.large
+- sg -allow all 
+- 30GB
+
+- configure elastic search
+- configure kibana
+- configure servers
+- configure filebeat(agent)
+- to maintain structure logs we need use Logstash
+- configure Logstash in ELS master server.
